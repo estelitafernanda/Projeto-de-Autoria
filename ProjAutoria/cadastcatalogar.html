@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastcatalogar.css">
+    <title>CompostBy</title>
+</head>
+<body>
+    <div class="container">
+        <img src="imagens/plantar1.png" class="plantar1">
+        <h1 class="compostby">CompostBy</h1>
+        <div class="line2"></div>
+        <div class="container2">
+            <a href="entrou.html">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </a>
+        </div>
+    </div>
+    <div class="container3">
+        <h1 class="catal">Catalogando Solos</h1>
+        <br>
+        <div class="line3"></div>
+        <img src="imagens/solo3.png" class="solo2">
+       <form id="cadastroForm">
+            <label for="id" class="id">Id:</label>
+            <br>
+            <input type="text" name="id" id="id" class="rectangle">
+            <br>
+            <label for="func" class="func">Funcionário: </label>
+            <br>
+            <input type="text" name="func" id="func" class="rectangle">
+            <br>
+            <label for="tipo" class="tipo">Tipo:</label>
+            <br>
+            <input type="text" name="tipo" id="tipo" class="rectangle2">
+            <br>
+            <label for="form" class="form">Formação: </label>
+            <br>
+            <input type="text" name="form" id="form" class="rectangle2">
+            <br>
+            <label for="comp" class="comp">Composição:</label>
+            <br>
+            <input type="text" name="comp" id="comp" class="rectangle2">
+            <br>
+            <label for="impor" class="impor">Importância: </label>
+            <br>
+            <input type="text" name="impor" id="import" class="rectangle3">
+            <br>
+            <label for="infor" class="infor">Informações: </label>
+            <br>
+            <input type="text" name="infor" id="infor" class="rectangle3">
+            <br>
+            <button type="submit" id="salvarBtn" onclick="catalogarSolo()">Salvar</button>
+       </form>
+    </div>
+    <script src="js/cadastcatalogar.js"></script>
+</body>
+</html>

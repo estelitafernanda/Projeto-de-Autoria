@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastfunc.css">
+    <title>CompostBy - Cadastro de Funcionários</title>
+</head>
+<body>
+    <div class="container">
+        <img src="imagens/plantar1.png" class="plantar1">
+        <h1 class="compostby">CompostBy</h1>
+        <div class="line2"></div>
+        <div class="container2">
+            <a href="entrou.html">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </a>
+        </div>
+    </div>
+    <div class="container3">
+        <h1 class="catal">Cadastrando Funcionário</h1>
+        <br>
+        <div class="line3"></div>
+       <form id="cadastroForm">
+            <label for="inputImagem" id="labelImagem">
+                <img src="imagens/carteira-de-identidade2.png"  class="carteira" id="imagemPreview">
+            </label>
+            <input type="file" name="foto" class="carteira" id="inputImagem" accept="image/*" onchange="atualizarImagemBase64()">
+            <br>
+            <label for="nome" class="nome">Nome:</label>
+            <br>
+            <input type="text" name="nome" id="nome" class="rectangle">
+            <br>
+            <label for="CPF" class="cpf">CPF: </label>
+            <br>
+            <input type="text" name="CPF" id="cpf" class="rectangle" oninput="formatarCPF(this)">
+            <br>
+            <label for="cont" class="cont">Contratação - Última Atividade:</label>
+            <br>
+            <input type="date" name="cont" id="cont" class="rectangle2">
+            <br>
+            <div class="line4"></div>
+            <input type="date" name="ult" id="ult" class="rectangle3">
+            <div class="line5"></div>
+            <label for="text" class="codigo">Código do Funcionário: </label>
+            <br>
+            <input type="text" name="codigo" id="codigo" class="rectangle4">
+            <div class="line5"></div>
+            <label for="funcao" class="funcao">Função:</label>
+            <br>
+            <input type="text" name="funcao" id="funcao" class="rectangle5">
+            <label for="obs" class="obs">Observações: </label>
+            <br>
+            <input type="text" name="obs" id="obs" class="rectangle6">
+            <br>
+            <button type="button" onclick="salvarCadastro()">Salvar</button>
+       </form>
+    </div>
+    <script src="js/cadastfunc.js"></script>
+</body>
+</html>
